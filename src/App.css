@@ -41,6 +41,10 @@ img {
 h2 {
   word-wrap: normal;
 }
+h3 {
+  padding: 10px;
+  text-decoration: underline;
+}
 .container {
   display: inline-block;
   position: relative;
