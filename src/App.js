@@ -38,7 +38,7 @@ class App extends Component {
     Axios
     .get(`https://api.themoviedb.org/3/movie/${id}?api_key=b6fbc7f3f313bd395902af464ef47262&language=en-US`)
     .then((response) =>{
-      this.setState({singlemoviedata: response.data,open: true, movietitle: "movie.title"})
+      this.setState({singlemoviedata: response.data,open: true})
       console.log(response.data)
     })
   }
@@ -70,7 +70,12 @@ class App extends Component {
           open={this.state.open}
           onClose={() => this.setState({open: false})}
           title={this.state.singlemoviedata.title}
-          content={""}
+          content={
+            <div>
+              <div>Status: {this.state.singlemoviedata.status}</div>
+              <div> Release date: {this.state.singlemoviedata.release_date}</div>
+            </div>
+        }
         />
       </div>
     );
