@@ -18,10 +18,33 @@ class App extends Component {
       <div className="App">
         {this.state.moviedata.results.map( (movie) => {
           return (
-           <div>
-             <h1>{movie.title}</h1>
+
+
+
+
+
+
+           <div className="container">
+              <div className="moviegrid">
+             <h2>{movie.title}</h2>
+            
+            <div className="imagecontain">
              <img src={"https://image.tmdb.org/t/p/w500" + movie.poster_path} />
+                  <p className="overview">{movie.overview}</p>
             </div>
+                 
+                  <p>Rating: {movie.vote_average}</p>
+              </div>
+
+            </div>
+
+            
+
+
+
+
+
+
            )
         } )}
       </div>

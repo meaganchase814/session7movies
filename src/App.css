@@ -30,3 +30,43 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  position: relative;
+  width: 25vw;
+  border: 1px solid black;
+  box-shadow: 2px 2px 8px #282c34
+}
+
+h2 {
+  word-wrap: normal;
+}
+.container {
+  display: inline-block;
+  position: relative;
+}
+
+.moviegrid {
+  width: 25vw;
+  margin: 5px;
+}
+
+.overview {
+  position: absolute;
+  background-size: contain;
+  top: 0px;
+  width: 25vw;
+  height: 400px;
+  z-index: -1;
+}
+
+.moviegrid:hover img {
+opacity: .4;
+
+}
+
+.imagecontain {
+  position: relative;
+  
+}
+
