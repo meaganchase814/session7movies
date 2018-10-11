@@ -54,14 +54,18 @@ class App extends Component {
   }
 
   render() {
-    return (
+    return ( 
+      
       <div className="App">
         
+        <div className="banner">
+        <h1 className="bannertext">The  
+          Internet  
+          Movie  
+          DataBase 
+           5000</h1>
         <Search somename={this.getInfo}></Search>
-      
-      
-        <h1>The Internet Movie Database 5000</h1>
-      
+        </div>
 
         {this.state.moviedata.results.map( (movie) => {
           return (
@@ -103,6 +107,7 @@ class App extends Component {
       </div>
     );
   }
+  
 }
 
 export default App;

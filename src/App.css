@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Outline");
+
 .App {
   text-align: center;
 }
@@ -7,7 +9,11 @@ img {
   border: 1px solid black;
   box-shadow: 2px 2px 8px #282c34
 }
-
+h1 {
+  color: rgb(243, 243, 152);
+  font-family:'bungee outline', cursive;
+  width: 100%;
+}
 h2 {
   word-wrap: normal;
 }
@@ -20,7 +26,15 @@ h3 {
   position: relative;
   
 }
-
+.bannertext {
+  
+}
+.banner {
+  height: auto;
+  background: black;
+  padding: 5px;
+  
+}
 .moviegrid {
   width: 25vw;
   margin: 5px;
