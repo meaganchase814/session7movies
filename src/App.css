@@ -2,6 +2,8 @@
 
 .App {
   text-align: center;
+  background-image: url("https://www.nostalgiaproducts.com/wp-content/uploads/2017/08/Popcorn_Large-Lid_shutterstock_71515753-1.jpg");
+ 
 }
 img {
   position: relative;
@@ -10,9 +12,11 @@ img {
   box-shadow: 2px 2px 8px #282c34
 }
 h1 {
-  color: rgb(243, 243, 152);
+  color: rgb(252, 252, 252);
   font-family:'bungee outline', cursive;
   width: 100%;
+  font-size: 35pt;
+
 }
 h2 {
   word-wrap: normal;
@@ -26,13 +30,18 @@ h3 {
   position: relative;
   
 }
-.bannertext {
-  
-}
+
 .banner {
   height: auto;
-  background: black;
+  background: rgba(255, 30, 30, 0.671);
   padding: 5px;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+   
   
 }
 .moviegrid {

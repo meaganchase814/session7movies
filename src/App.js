@@ -14,7 +14,9 @@ class App extends Component {
         results: [],
       },
       open: false,
-      singlemoviedata: { },
+      singlemoviedata: {
+        genres: [{}],
+       },
     }
     this.getInfo = this.getInfo.bind(this)
       Axios
@@ -59,7 +61,7 @@ class App extends Component {
       <div className="App">
         
         <div className="banner">
-        <h1 className="bannertext">The  
+        <h1 className="h1">The  
           Internet  
           Movie  
           DataBase 
@@ -95,12 +97,12 @@ class App extends Component {
           title={this.state.singlemoviedata.title}
           content={
             <div>
+              <div><img alt="" src={"https://image.tmdb.org/t/p/w500" + this.state.singlemoviedata.backdrop_path}/></div>
               <div>Status: {this.state.singlemoviedata.status}</div>
               <div> Release date: {this.state.singlemoviedata.release_date}</div>
-              <div>Popularity: {this.state.singlemoviedata.popularity}</div>
+              <div>Genre: {this.state.singlemoviedata.genres[0].name}</div>
               <div>Original Language: {this.state.singlemoviedata.original_language}</div>
-              <div><img alt="" src={"https://image.tmdb.org/t/p/w500" + this.state.singlemoviedata.backdrop_path}/></div>
-              
+              <div>Budget: ${this.state.singlemoviedata.budget}</div>
             </div>
         }
         /></div>
