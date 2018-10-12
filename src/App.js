@@ -19,13 +19,15 @@ class App extends Component {
        },
     }
     this.getInfo = this.getInfo.bind(this)
+    this.gotoPageTwo = this.gotoPageTwo.bind(this)
+
       Axios
       .get("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=b6fbc7f3f313bd395902af464ef47262")
       .then((response) => {
         this.setState({moviedata: response.data});
       })
 
-      this.gotoPageTwo = this.gotoPageTwo.bind(this)
+     
    
   }
 
@@ -72,10 +74,10 @@ class App extends Component {
         {this.state.moviedata.results.map( (movie) => {
           return (
             
-            <div className="container">
+            <div key={movie.id} className="container">
            
               <div className="moviegrid">
-                <h2>{movie.title}</h2>
+                <h2 >{movie.title}</h2>
                 
                 <div className="imagecontain" onClick={() => this.popupfunction(movie.id)}>
                   
