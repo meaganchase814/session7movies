@@ -1,3 +1,7 @@
+Internet Movie DataBase: Site displays information about movies & is searchable
+
+
+
 Search component reference: https://dev.to/sage911/how-to-write-a-search-component-with-suggestions-in-react-d20
 
 
